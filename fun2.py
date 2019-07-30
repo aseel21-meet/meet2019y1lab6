@@ -33,7 +33,13 @@ def on_move():
    elif turtle.direction=='Left':
               turtle.goto(x_cor-20,y_cor)
    elif turtle.direction=='Right':
-              turtle.goto(x_cor+20,y_cor)           
+              turtle.goto(x_cor+20,y_cor)
+def space():
+    turtle.isdown()
+    turtle.up()
+    turtle.down()
+turtle.onkey(space,'Space')
+
 
     
 turtle.mainloop()
